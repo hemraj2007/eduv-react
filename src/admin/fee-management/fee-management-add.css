@@ -1,0 +1,279 @@
+/* Fee Management Add Page Styling */
+
+/* Container Styles */
+.admin-dashboard-add-user-container {
+  padding: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.admin-dashboard-add-user-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card Styles */
+.admin-dashboard-form-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.admin-dashboard-form-card:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+/* Header Styles */
+.admin-dashboard-form-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.admin-dashboard-form-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.admin-dashboard-form-header p {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Form Body Styles */
+.admin-dashboard-form-body {
+  padding: 2rem;
+}
+
+/* Form Row Grid */
+.admin-dashboard-form-row-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Group Styles */
+.admin-dashboard-form-group-animated {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Label Styles */
+.admin-dashboard-form-label-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* Form Input Styles */
+.admin-dashboard-form-input-styled {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  background-color: #f9fafb;
+}
+
+.admin-dashboard-form-input-styled:focus {
+  border-color: #00BCD4;
+  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.2);
+  outline: none;
+}
+
+.admin-dashboard-form-input-styled.error {
+  border-color: #ef4444;
+}
+
+.admin-dashboard-form-input-styled::placeholder {
+  color: #9ca3af;
+}
+
+/* Input Wrapper for Password Fields */
+.admin-dashboard-input-wrapper {
+  position: relative;
+}
+
+.admin-dashboard-password-toggle {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Form Select Styles */
+.admin-dashboard-form-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  background-color: #f9fafb;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+}
+
+.admin-dashboard-form-select:focus {
+  border-color: #00BCD4;
+  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.2);
+  outline: none;
+}
+
+.admin-dashboard-form-select.error {
+  border-color: #ef4444;
+}
+
+.admin-dashboard-required {
+  color: #ef4444;
+  margin-left: 0.25rem;
+}
+
+/* Error Message Styles */
+.admin-dashboard-error-message {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #ef4444;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+/* Form Actions */
+.admin-dashboard-form-actions-styled {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Button Styles */
+.admin-dashboard-btn-styled {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.admin-dashboard-btn-styled:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.admin-dashboard-btn-styled:active {
+  transform: translateY(0);
+}
+
+.admin-dashboard-btn-styled-primary {
+  background: linear-gradient(135deg, #00BCD4 0%, #0097A7 100%);
+  color: white;
+}
+
+.admin-dashboard-btn-styled-primary:hover {
+  background: linear-gradient(135deg, #0097A7 0%, #00796B 100%);
+}
+
+.admin-dashboard-btn-styled-secondary {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+.admin-dashboard-btn-styled-secondary:hover {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+/* Spinner Styles */
+.admin-dashboard-spinner {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 2px solid white;
+  width: 1rem;
+  height: 1rem;
+  animation: spin 1s linear infinite;
+}
+
+.admin-dashboard-spinner-sm {
+  width: 1rem;
+  height: 1rem;
+  border-width: 2px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Select Styles */
+.admin-dashboard-form-select {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  background-color: #f9fafb;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+}
+
+.admin-dashboard-form-select:focus {
+  border-color: #00BCD4;
+  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.2);
+  outline: none;
+}
+
+.admin-dashboard-form-select.error {
+  border-color: #ef4444;
+}
+
+/* Required Field Indicator */
+.admin-dashboard-required {
+  color: #ef4444;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .admin-dashboard-form-row-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .admin-dashboard-form-actions-styled {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .admin-dashboard-btn-styled {
+    width: 100%;
+  }
+}

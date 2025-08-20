@@ -1,0 +1,13 @@
+.env
+
+
+# Node modules
+node_modules/
+
+# Build cache
+.cache/
+dist/
+build/
+
+
+
