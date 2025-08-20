@@ -88,7 +88,7 @@ const StudentProfile = () => {
 
   const getProfileImage = () => {
     if (studentData?.profilePicture) {
-      return `${process.env.REACT_APP_API_URL || 'http://localhost:1100'}/${studentData.profilePicture}`;
+      return `${process.env.REACT_APP_API_URL || `https://eduv-node-kxzd.onrender.com`}/${studentData.profilePicture}`;
     }
     return null;
   };

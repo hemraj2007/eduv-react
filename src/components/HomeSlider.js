@@ -17,7 +17,7 @@ export default function HomeSlider() {
         console.log('API Response:', response);
         if (response?.success && response?.data) {
           // Get API base URL from environment or use default
-          const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:1100';
+          const API_BASE_URL = process.env.REACT_APP_API_URL || `https://eduv-node-kxzd.onrender.com`;
           
           // Filter only active sliders and sort by position
           const activeSliders = response.data

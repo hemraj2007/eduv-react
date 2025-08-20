@@ -60,7 +60,7 @@ export default function Home() {
         console.log('Course API Response:', response);
         if (response?.data) {
           // Get API base URL from environment or use default
-          const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:1100';
+          const API_BASE_URL = process.env.REACT_APP_API_URL || `https://eduv-node-kxzd.onrender.com`;
 
           // Filter only active courses and add image URL
           const activeCourses = response.data

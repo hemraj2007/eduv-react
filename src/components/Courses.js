@@ -16,8 +16,8 @@ export default function Courses() {
         console.log('Course API Response:', response);
         if (response?.data) {
           // Get API base URL from environment or use default
-          const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:1100';
-          
+          const API_BASE_URL = process.env.REACT_APP_API_URL || `https://eduv-node-kxzd.onrender.com`;
+
           // Filter only active courses and add image URL
           const activeCourses = response.data
             .filter(course => course.status === 'Y')
@@ -172,7 +172,7 @@ export default function Courses() {
               </h6>
               <h1 className="mb-5">Popular Courses</h1>
             </div>
-            
+
             {loading ? (
               <div className="text-center">
                 <div className="spinner-border text-primary" role="status">
@@ -190,9 +190,9 @@ export default function Courses() {
                   <div key={course._id} className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`${0.1 + index * 0.2}s`}>
                     <div className="course-item bg-light">
                       <div className="position-relative overflow-hidden">
-                        <img 
-                          className="img-fluid" 
-                          src={course.imageUrl} 
+                        <img
+                          className="img-fluid"
+                          src={course.imageUrl}
                           alt={course.name}
                           onError={(e) => {
                             console.error('Course image failed to load:', course.imageUrl);
